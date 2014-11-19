@@ -47,12 +47,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acknowledgements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acknowledgements.Designer.cs">
+      <DependentUpon>Acknowledgements.cs</DependentUpon>
+    </Compile>
     <Compile Include="AncientAncestryFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AncientAncestryFrm.Designer.cs">
       <DependentUpon>AncientAncestryFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="License.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License.Designer.cs">
+      <DependentUpon>License.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PieChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PieChart.Designer.cs">
+      <DependentUpon>PieChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PieChart\GraphicsUtil.cs" />
+    <Compile Include="PieChart\PieChart.cs" />
+    <Compile Include="PieChart\PieChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieChart\PieSlice.cs" />
+    <Compile Include="PieChart\Quadrilateral.cs" />
+    <Compile Include="PieChart\Util.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SNPViewFrm.cs">
@@ -112,8 +144,23 @@
     <Compile Include="zip2\Zip\ZipInputStream.cs" />
     <Compile Include="zip2\Zip\ZipNameTransform.cs" />
     <Compile Include="zip2\Zip\ZipOutputStream.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acknowledgements.resx">
+      <DependentUpon>Acknowledgements.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AncientAncestryFrm.resx">
       <DependentUpon>AncientAncestryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License.resx">
+      <DependentUpon>License.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PieChart.resx">
+      <DependentUpon>PieChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PieChart\PieChartControl.resx">
+      <DependentUpon>PieChartControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -138,12 +185,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="snps_list.txt.gz" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="allocated_names.txt" />
     <Content Include="atree.xml" />
+    <Content Include="Dna-Strand.jpg" />
     <Content Include="dna.ico" />
-    <Content Include="genxml.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

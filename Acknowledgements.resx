@@ -117,14 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="atree" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\atree.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="ibd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ibd.zip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="snps_list_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\snps_list.txt.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Double Helix DNA Icon - http://icons8.com/
+
+Pie Chart - http://www.codeproject.com/Articles/7321/D-Pie-Chart
+
+DNA Strand Image - http://www.vecteezy.com/abstract/615-dna-strand
+
+SharpZibLib - http://icsharpcode.github.io/SharpZipLib/
+
+GEDmatch - http://www.gedmatch.com/
+
+Prüfer, Kay, Fernando Racimo, Nick Patterson, Flora Jay, Sriram Sankararaman, Susanna Sawyer, Anja Heinze et al. "The complete genome sequence of a Neanderthal from the Altai Mountains." Nature 505, no. 7481 (2014): 43-49.
+
+Rasmussen, Morten, Sarah L. Anzick, Michael R. Waters, Pontus Skoglund, Michael DeGiorgio, Thomas W. Stafford Jr, Simon Rasmussen et al. "The genome of a Late Pleistocene human from a Clovis burial site in western Montana." Nature 506, no. 7487 (2014): 225-229.
+
+Meyer, Matthias, Martin Kircher, Marie-Theres Gansauge, Heng Li, Fernando Racimo, Swapan Mallick, Joshua G. Schraiber et al. "A high-coverage genome sequence from an archaic Denisovan individual." Science 338, no. 6104 (2012): 222-226.
+
+Wellcome Trust Sanger Institute.
+
+Lazaridis, Iosif, Nick Patterson, Alissa Mittnik, Gabriel Renaud, Swapan Mallick, Peter H. Sudmant, Joshua G. Schraiber et al. "Ancient human genomes suggest three ancestral populations for present-day Europeans."arXiv preprint arXiv:1312.6639 (2013).
+
+Lazaridis, Iosif, Nick Patterson, Alissa Mittnik, Gabriel Renaud, Swapan Mallick, Peter H. Sudmant, Joshua G. Schraiber et al. "Ancient human genomes suggest three ancestral populations for present-day Europeans."arXiv preprint arXiv:1312.6639 (2013).
+
+Rasmussen, Morten, Yingrui Li, Stinus Lindgreen, Jakob Skou Pedersen, Anders Albrechtsen, Ida Moltke, Mait Metspalu et al. "Ancient human genome sequence of an extinct Palaeo-Eskimo." Nature 463, no. 7282 (2010): 757-762.
+
+Cristina Gamba, Eppie R. Jones, Matthew D. Teasdale, Russell L. McLaughlin, Gloria Gonzalez-Fortes, Valeria Mattiangeli, László Domboróczki, Ivett Kővári, Ildikó Pap, Alexandra Anders, Alasdair Whittle, János Dani, Pál Raczky, Thomas F. G. Higham, Michael Hofreiter, Daniel G. Bradley &amp; Ron Pinhasi "Genome flux and stasis in a five millennium transect of European prehistory"doi:10.1038/ncomms6257.
+</value>
   </data>
 </root>

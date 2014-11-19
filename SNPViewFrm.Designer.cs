@@ -34,7 +34,7 @@
             this.rsid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genotype = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ancient_gt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.your_gt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -52,7 +52,7 @@
             this.rsid,
             this.chro,
             this.pos,
-            this.genotype,
+            this.ancient_gt,
             this.your_gt});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -62,6 +62,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(624, 442);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dataGridView1_SortCompare);
             // 
             // rsid
@@ -81,21 +82,21 @@
             // pos
             // 
             this.pos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.pos.HeaderText = "POSITION";
+            this.pos.HeaderText = "POSITOIN";
             this.pos.Name = "pos";
             this.pos.ReadOnly = true;
             // 
-            // genotype
+            // ancient_gt
             // 
-            this.genotype.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.genotype.HeaderText = "ANCIENT GT";
-            this.genotype.Name = "genotype";
-            this.genotype.ReadOnly = true;
+            this.ancient_gt.HeaderText = "ANCIENT_GT";
+            this.ancient_gt.Name = "ancient_gt";
+            this.ancient_gt.ReadOnly = true;
+            this.ancient_gt.Visible = false;
             // 
             // your_gt
             // 
             this.your_gt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.your_gt.HeaderText = "YOUR GT";
+            this.your_gt.HeaderText = "You";
             this.your_gt.Name = "your_gt";
             this.your_gt.ReadOnly = true;
             // 
@@ -128,6 +129,8 @@
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SNPViewFrm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Detailed Segment View";
             this.Load += new System.EventHandler(this.SNPViewFrm_Load);
@@ -143,12 +146,12 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel statusLbl;
         private System.Windows.Forms.DataGridViewTextBoxColumn rsid;
         private System.Windows.Forms.DataGridViewTextBoxColumn chro;
         private System.Windows.Forms.DataGridViewTextBoxColumn pos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genotype;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ancient_gt;
         private System.Windows.Forms.DataGridViewTextBoxColumn your_gt;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel statusLbl;
     }
 }

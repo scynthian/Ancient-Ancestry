@@ -61,23 +61,11 @@ namespace Ancient_Ancestry.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;CA NAME=&apos;ADAM AND EVE&apos;&gt;
-        ///	&lt;CA NAME=&apos;LBK-LOS-CA1-BR2-UI&apos;&gt;
-        ///		&lt;KITS&gt;
-        ///			&lt;KIT ID=&apos;999916&apos; NAME=&apos;Linearbandkeramik&apos;/&gt;
-        ///			&lt;KIT ID=&apos;999918&apos; NAME=&apos;Loschbour&apos;/&gt;
-        ///			&lt;KIT ID=&apos;999919&apos; NAME=&apos;Clovis Anzick-1&apos;/&gt;
-        ///			&lt;KIT ID=&apos;999933&apos; NAME=&apos;BR2&apos;/&gt;
-        ///			&lt;KIT ID=&apos;999935&apos; NAME=&apos;Ust-Ishim&apos;/&gt;
-        ///		&lt;/KITS&gt;
-        ///		&lt;SEGMENTS&gt;
-        ///			&lt;SEGMENT CHR=&apos;8&apos; START=&apos;43383815&apos;  END=&apos;43791691&apos;/&gt;
-        ///		&lt;/SEGMENTS&gt;
-        ///		&lt;CA NAME=&apos;LBK-LOS-CA1-BR2&apos;&gt;
-        ///			&lt;KITS&gt;
-        ///				&lt;KIT ID=&apos;999916&apos; NAME=&apos;Linearbandkeramik&apos;/&gt;
-        ///				&lt;KIT ID=&apos;999918&apos; NAME=&apos;Loschbour&apos;/&gt;
-        ///				&lt;KI [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;CA NAME=&apos;ADAM-EVE&apos;&gt;
+        ///&lt;CA NAME=&apos;Loschbour/Clovis Anzick-1/BR2/Ust&amp;apos;-Ishim&apos; ID=&apos;999918-999919-999933-999935&apos;&gt;
+        ///&lt;KITS&gt;&lt;KIT ID=&apos;999918&apos; NAME=&apos;Loschbour&apos;/&gt;&lt;KIT ID=&apos;999919&apos; NAME=&apos;Clovis Anzick-1&apos;/&gt;&lt;KIT ID=&apos;999933&apos; NAME=&apos;BR2&apos;/&gt;&lt;KIT ID=&apos;999935&apos; NAME=&apos;Ust&amp;apos;-Ishim&apos;/&gt;&lt;/KITS&gt;&lt;SEGMENTS&gt;&lt;SEGMENT CHR=&apos;2&apos; START=&apos;197947389&apos;  END=&apos;199047173&apos;/&gt;&lt;/SEGMENTS&gt;
+        ///&lt;CA NAME=&apos;Loschbour/Clovis Anzick-1/BR2&apos; ID=&apos;999918-999919-999933&apos;&gt;
+        ///&lt;KITS&gt;&lt;KIT ID=&apos;999918&apos; NAME=&apos;Loschbour&apos;/&gt;&lt;KIT ID=&apos;999919&apos; NAME=&apos;Clovis Anzick-1&apos;/&gt;&lt;KIT ID=&apos;999 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string atree {
             get {
@@ -91,6 +79,16 @@ namespace Ancient_Ancestry.Properties {
         internal static byte[] ibd {
             get {
                 object obj = ResourceManager.GetObject("ibd", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] snps_list_txt {
+            get {
+                object obj = ResourceManager.GetObject("snps_list_txt", resourceCulture);
                 return ((byte[])(obj));
             }
         }
