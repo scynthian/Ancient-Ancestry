@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SNPViewFrm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusLbl = new System.Windows.Forms.ToolStripStatusLabel();
             this.rsid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ancient_gt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.your_gt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.statusLbl = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,41 +65,6 @@
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dataGridView1_SortCompare);
             // 
-            // rsid
-            // 
-            this.rsid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.rsid.HeaderText = "RSID";
-            this.rsid.Name = "rsid";
-            this.rsid.ReadOnly = true;
-            // 
-            // chro
-            // 
-            this.chro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.chro.HeaderText = "CHR";
-            this.chro.Name = "chro";
-            this.chro.ReadOnly = true;
-            // 
-            // pos
-            // 
-            this.pos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.pos.HeaderText = "POSITOIN";
-            this.pos.Name = "pos";
-            this.pos.ReadOnly = true;
-            // 
-            // ancient_gt
-            // 
-            this.ancient_gt.HeaderText = "ANCIENT_GT";
-            this.ancient_gt.Name = "ancient_gt";
-            this.ancient_gt.ReadOnly = true;
-            this.ancient_gt.Visible = false;
-            // 
-            // your_gt
-            // 
-            this.your_gt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.your_gt.HeaderText = "You";
-            this.your_gt.Name = "your_gt";
-            this.your_gt.ReadOnly = true;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -119,6 +84,41 @@
             this.statusLbl.Name = "statusLbl";
             this.statusLbl.Size = new System.Drawing.Size(35, 17);
             this.statusLbl.Text = "Done";
+            // 
+            // rsid
+            // 
+            this.rsid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.rsid.HeaderText = "RSID";
+            this.rsid.Name = "rsid";
+            this.rsid.ReadOnly = true;
+            // 
+            // chro
+            // 
+            this.chro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.chro.HeaderText = "CHR";
+            this.chro.Name = "chro";
+            this.chro.ReadOnly = true;
+            // 
+            // pos
+            // 
+            this.pos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.pos.HeaderText = "POSITION";
+            this.pos.Name = "pos";
+            this.pos.ReadOnly = true;
+            // 
+            // ancient_gt
+            // 
+            this.ancient_gt.HeaderText = "ANCIENT_GT";
+            this.ancient_gt.Name = "ancient_gt";
+            this.ancient_gt.ReadOnly = true;
+            this.ancient_gt.Visible = false;
+            // 
+            // your_gt
+            // 
+            this.your_gt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.your_gt.HeaderText = "You";
+            this.your_gt.Name = "your_gt";
+            this.your_gt.ReadOnly = true;
             // 
             // SNPViewFrm
             // 
