@@ -34,6 +34,9 @@
   <PropertyGroup>
     <ApplicationIcon>dna.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Ancient_Ancestry.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />

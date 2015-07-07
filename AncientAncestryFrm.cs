@@ -80,12 +80,17 @@ namespace Ancient_Ancestry
             }
 
             treenode.Nodes.Add(currnode);
-            kvpair.Add(currnode.FullPath, xmlnode);
-            if (xmlnode.HasChildNodes)
+            if (!kvpair.ContainsKey(currnode.FullPath))
             {
-                foreach(XmlNode xnode in xmlnode.ChildNodes)
-                    populateLeaf(xnode, currnode);
+                kvpair.Add(currnode.FullPath, xmlnode);
+                if (xmlnode.HasChildNodes)
+                {
+                    foreach (XmlNode xnode in xmlnode.ChildNodes)
+                        populateLeaf(xnode, currnode);
+                }
             }
+            else
+                MessageBox.Show("Error: Check the XML for '"+currnode.FullPath+"' - duplicate entry.");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

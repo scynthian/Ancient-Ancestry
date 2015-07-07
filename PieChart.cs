@@ -35,7 +35,7 @@ namespace Ancient_Ancestry
             {
                 values.Add((decimal)shared_dna[key]);
                 text.Add(key);
-                tooltip.Add((shared_dna[key] * 100 / total).ToString("#0.00") + " %");
+                tooltip.Add(((shared_dna[key] / total) * 100).ToString("#0.00") + " %");
                 colors.Add(Color.FromArgb(225, getColor(randomGen)));
             }
 
