@@ -1,0 +1,25 @@
+999902,Altai Neanderthal
+999903,Denisova
+999906,Palaeo Eskimo
+999914,Mal&apos;ta
+999915,La Brana Arintero
+999916,Linearbandkeramik
+999917,Motala-12
+999918,Loschbour
+999919,Clovis Anzick-1
+999921,Hinxton-2
+999922,Hinxton-3
+999924,Ajvide58
+999925,Hinxton-4
+999926,Hinxton-5
+999927,NE5
+999928,NE7
+999929,IR1
+999930,CO1
+999931,KO1
+999932,NE6
+999933,BR2
+999934,Gokhem2
+999935,Ust&apos;-Ishim
+999936,Kostenki14
+999937,NE1
